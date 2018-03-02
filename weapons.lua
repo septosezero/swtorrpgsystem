@@ -38,32 +38,12 @@ DarkRPG.createWeaponCategory({
 })
 
 DarkRPG.createWeaponCategory({
-	name = 'Submachine guns',
+	name = 'Launchers',
 	weapons = {
-		'weapon_mac102',
-		'weapon_mp52',
-		'm9k_honeybadger',
-		'm9k_bizonp19',
-		'm9k_smgp90',
-		'm9k_mp5',
-		'm9k_mp7',
-		'm9k_ump45',
-		'm9k_usc',
-		'm9k_kac_pdw',
-		'm9k_vector',
-		'm9k_magpulpdr',
-		'm9k_mp40',
-		'm9k_mp5sd',
-		'm9k_mp9',
-		'm9k_sten',
-		'm9k_tec9',
-		'm9k_thompson',
-		'm9k_uzi',
-		'fas2_mp5a5',
-		'fas2_mp5k',
-		'fas2_mp5sd6',
-		'fas2_pp19',
-		'fas2_uzi',
+		"weapon_tfa_grenade",
+		"weapon_tfa_swch_clonelauncher_2",
+		"weapon_tfa_swch_clonelauncher_3",
+		"weapon_tfa_swch_clonelauncher",
 	}
 })
 
