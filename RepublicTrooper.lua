@@ -20,9 +20,10 @@ local RepublicArmyOfficer = {TEAM_REPUBLICARMYOFF, TEAM_REPUBLICGEN}
 local RepublicNavyOfficer = {TEAM_REPUBLICNAVYOFF, TEAM_REPUBLICADM}
 local ImpArmyOfficer = {TEAM_SITHARMYOFF, TEAM_SITHGEN}
 local ImpNavyOfficer = {TEAM_SITHNAVYOFF, TEAM_SITHADMIRAL}
+local Troopers = {TEAM_REPUBLICTRP, TEAM_REPUBLICSGT, TEAM_SITHTRP, TEAM_SITHSGT}
 -- Republic Troopers
 DarkRPG.createJobSkills({
-	team = RepublicArmy,
+	team = Troopers,
 	--team = TEAM_EXAMPLE
 
 	-- player stats
@@ -51,7 +52,7 @@ DarkRPG.createJobSkills({
 -- adds a talent button
 DarkRPG.createTalent({
 	name = "Blaster Rifle Training",
-	team = RepublicArmy, ImpArmy
+	team = Troopers,
 	pos = {1,1}, -- x and y on the talent tree
 	thumb = "BlasterRifles.png", -- must be in '/materials/darkrpg2/myexample.png'
 	ranks = 9, -- ranks 1 through 9
@@ -70,7 +71,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Blaster Pistol Proficiency",
-	team = RepublicArmy, ImpArmy
+	team = Troopers,
 	pos = {1,2},
 	thumb = "BlasterPistols.png",
 	ranks = 9,
@@ -89,7 +90,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Heavy Weapons Proficiency",
-	team = RepublicArmy, ImpArmy
+	team = Troopers,
 	pos = {1,3},
 	thumb = "HeavyWeapons.png",
 	ranks = 9,
@@ -108,7 +109,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Medic Training",
-	team = RepublicArmy, ImpArmy
+	team = Troopers,
 	pos = {2,1},
 	thumb = "MedicTraining.png",
 	ranks = 9,
@@ -122,6 +123,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Sniper Training",
+	team = Troopers,
 	pos = {2,2},
 	thumb = "SniperTraining.png",
 	ranks = 9,
@@ -140,6 +142,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Engineer Training",
+	team = Troopers,
 	pos = {2,3},
 	thumb = "EngineerTraining.png",
 	ranks = 9,
@@ -158,6 +161,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Steady Aim",
+	team = Troopers,
 	pos = {3,2},
 	thumb = "SteadyAim.png",
 	ranks = 9,
@@ -170,6 +174,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Power Shot",
+	team = Troopers,
 	pos = {3,3},
 	thumb = "PowerShot.png",
 	ranks = 9,
@@ -182,6 +187,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Conditioning",
+	team = Troopers,
 	pos = {4,3},
 	thumb = "Conditioning.png",
 	ranks = 9,
