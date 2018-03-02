@@ -77,7 +77,7 @@ DarkRPG.Config.SkillShiftClick = 10 -- How many skill points are added per Shift
 -- How much of a bonus a skill point gives to a player stat
 -- health = '1' is +1 health per skill point.
 
-DarkRPG.Skill.health = "1"
+DarkRPG.Skill.health = "10"
 DarkRPG.Skill.movement = "0.5%"
 DarkRPG.Skill.jump = "1%"
 
@@ -105,11 +105,11 @@ DarkRPG.Skill.explode = "1.5%"
 -- If you put health = '100', your health is 100 + 100 extra health so 200 is the max.
 -- If you put evasion = '90%', your evasion is 0 + 90% evasion so 90% evasion is the max.
 
-DarkRPG.Skill.Max.health = '100'
+DarkRPG.Skill.Max.health = '200'
 DarkRPG.Skill.Max.movement = '60%'
 DarkRPG.Skill.Max.jump = '100%'
 
-DarkRPG.Skill.Max.armor = '100'
+DarkRPG.Skill.Max.armor = '200'
 DarkRPG.Skill.Max.evasion = '90%'
 DarkRPG.Skill.Max.reflect = '50%'
 
