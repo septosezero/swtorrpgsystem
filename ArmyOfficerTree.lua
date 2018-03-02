@@ -29,24 +29,24 @@ DarkRPG.createJobSkills({
 
 	-- player stats
 	stats = {
-		health = '50',
-		movement = '-25%',
-		jump = '-25%',
+		health = '75',
+		movement = '-10%',
+		jump = '-10%',
 
-		armor = '50',
+		armor = '75',
 		evasion = '10%',
 		reflect = '10%',
 
-		salary = '10%',
+		salary = '15%',
 		merchant = '-50%',
-		prison = '-50%',
+		prison = '-25%',
 
 			-- applies to all weapons
-		damage = '1%',
-		critical = '1%',
-		firerate = '1%',
-		magazine = '1%',
-		ammo = '1%',
+		damage = '5%',
+		critical = '5%',
+		firerate = '5%',
+		magazine = '5%',
+		ammo = '5%',
 	},
 })
 
@@ -62,9 +62,9 @@ DarkRPG.createTalent({
 	weaponcategory = {
 		name = "Blaster Rifles",
 		stats = {
-			critical = "1%",
-			damage = "1%",
-			firerate = "1%",
+			critical = "2%",
+			damage = "2%",
+			firerate = "2%",
 			ammo = ".5",
 			},
 		},
@@ -81,9 +81,9 @@ DarkRPG.createTalent({
 	weaponcategory = {
 		name = "Blaster Pistols",
 		stats = {
-			critical = "1%",
-			damage = "1%",
-			firerate = "1%",
+			critical = "2%",
+			damage = "2%",
+			firerate = "2%",
 			ammo = ".5",
 			},
 		},
@@ -100,9 +100,9 @@ DarkRPG.createTalent({
 	weaponcategory = {
 		name = "Heavy Weapons",
 		stats = {
-			critical = "1%",
-			damage = "1%",
-			firerate = "1%",
+			critical = "2%",
+			damage = "2%",
+			firerate = "2%",
 			ammo = ".5",
 			},
 		},
@@ -133,8 +133,8 @@ DarkRPG.createTalent({
 	weaponcategory = {
 		name = "Sniper Rifles",
 		stats = {
-			critical = "3%",
-			damage = "2%",
+			critical = "5%",
+			damage = "3%",
 			firerate = "1%",
 			ammo = ".5",
 			},
