@@ -21,9 +21,10 @@ local RepublicNavyOfficer = {TEAM_REPUBLICNAVYOFF, TEAM_REPUBLICADM}
 local ImpArmyOfficer = {TEAM_SITHARMYOFF, TEAM_SITHGEN}
 local ImpNavyOfficer = {TEAM_SITHNAVYOFF, TEAM_SITHADMIRAL}
 local Troopers = {TEAM_REPUBLICTRP, TEAM_REPUBLICSGT, TEAM_SITHTRP, TEAM_SITHSGT}
+local ArmyOfficers = {TEAM_REPUBLICARMYOFF, TEAM_REPUBLICGEN, TEAM_SITHARMYOFF, TEAM_SITHGEN}
 -- Republic Troopers
 DarkRPG.createJobSkills({
-	team = Troopers,
+	team = ArmyOfficers,
 	--team = TEAM_EXAMPLE
 
 	-- player stats
@@ -52,7 +53,7 @@ DarkRPG.createJobSkills({
 -- adds a talent button
 DarkRPG.createTalent({
 	name = "Blaster Rifle Training",
-	team = Troopers,
+	team = ArmyOfficers,
 	pos = {1,1}, -- x and y on the talent tree
 	thumb = "BlasterRifles.png", -- must be in '/materials/darkrpg2/myexample.png'
 	ranks = 9, -- ranks 1 through 9
@@ -71,7 +72,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Blaster Pistol Proficiency",
-	team = Troopers,
+	team = ArmyOfficers,
 	pos = {1,2},
 	thumb = "BlasterPistols.png",
 	ranks = 9,
@@ -90,7 +91,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Heavy Weapons Proficiency",
-	team = Troopers,
+	team = ArmyOfficers,
 	pos = {1,3},
 	thumb = "HeavyWeapons.png",
 	ranks = 9,
@@ -109,7 +110,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Medic Training",
-	team = Troopers,
+	team = ArmyOfficers,
 	pos = {2,1},
 	thumb = "MedicTraining.png",
 	ranks = 9,
@@ -123,7 +124,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Sniper Training",
-	team = Troopers,
+	team = ArmyOfficers,
 	pos = {2,2},
 	thumb = "SniperTraining.png",
 	ranks = 9,
@@ -142,7 +143,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Engineer Training",
-	team = Troopers,
+	team = ArmyOfficers,
 	pos = {2,3},
 	thumb = "EngineerTraining.png",
 	ranks = 9,
@@ -160,34 +161,37 @@ DarkRPG.createTalent({
 })
 
 DarkRPG.createTalent({
-	name = "Steady Aim",
-	team = Troopers,
+	name = "Armored Command",
+	team = ArmyOfficers,
 	pos = {3,2},
 	thumb = "SteadyAim.png",
-	ranks = 9,
-	desc = "Steady Aim increases your proficiency with all weapons."
+	ranks = 5,
+	desc = "Armored Command increases your Damage Resistance and overall Health."
 	stats = {
-		critical = "2%",
-		firerate = "1%",
+		health = "5%",
+		resists = "5%",
+		evasion = "2%",
 		},
 })
 
 DarkRPG.createTalent({
-	name = "Power Shot",
-	team = Troopers,
+	name = "Guerrilla Tactics",
+	team = ArmyOfficers,
 	pos = {3,3},
 	thumb = "PowerShot.png",
-	ranks = 9,
-	desc = "Power Shot increases your damage with all weapons."
+	ranks = 5,
+	desc = "Knowledge of Geurilla tactics have made you a more efficient shot, and a deadly hunter."
 	stats = {
 		damage = "2%",
 		firerate = "1%",
+		critical = "2%",
+		movement = "5%",
 		},
 })
 
 DarkRPG.createTalent({
 	name = "Conditioning",
-	team = Troopers,
+	team = ArmyOfficers,
 	pos = {4,3},
 	thumb = "Conditioning.png",
 	ranks = 9,
