@@ -10,15 +10,21 @@
 -- DarkRPG prints out invalid talent values and tells you how to fix them in the console!
 
 -- adds these values to the player at Level 1 automatically.
+local RepublicArmy = {TEAM_REPUBLICTRP, TEAM_REPUBLICSGT, TEAM_REPBLICARMYOFF, TEAM_REPUBLICGEN}
+local RepublicNavy = {TEAM_REPUBLICCADET, TEAM_REPUBLICCREW, TEAM_REPUBLICNAVYOFF, TEAM_REPUBLICADM}
+local Jedi = {TEAM_JEDIPADAWAN, TEAM_JEDIKNIGHT, TEAM_JEDIMASTER}
+local Sith = {TEAM_SITHACOLYTE, TEAM_SITHAPP, TEAM_SITHLORD, TEAM_SITHDARKLORD}
+local ImpArmy = {TEAM_SITHTRP, TEAM_SITHSGT, TEAM_SITHARMYOFF, TEAM_SITHGEN}
+local ImpNavy = {TEAM_SITHCADET, TEAM_SITHCREW, TEAM_SITHNAVYOFF, TEAM_SITHADMIRAL}
 DarkRPG.createJobSkills({
-	team = {TEAM_EXAMPLE1, TEAM_EXAMPLE2},
+	team = RepublicArmy,
 	--team = TEAM_EXAMPLE
 
 	-- player stats
 	stats = {
 		health = '1',
 		movement = '1%',
-		jump = '1%',
+		jump = '0%',
 
 		armor = '1',
 		evasion = '1%',
