@@ -57,6 +57,15 @@ DarkRPG.createTalent({
 	ranks = 9, -- ranks 1 through 9
 	give = "weapon_tfa_kotor_br_1",
 	desc = "Proficiency in Blaster Rifles allows you to carry one at all times, and increases your ability with them.",
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			critical = "1%",
+			damage = "1%",
+			firerate = "1%",
+			ammo = ".5",
+			},
+		},
 })
 
 DarkRPG.createTalent({
@@ -67,6 +76,15 @@ DarkRPG.createTalent({
 	ranks = 9,
 	give = "weapon_tfa_kotor_bp_2",
 	desc = "Proficiency in Blaster Pistols allows you to carry one at all times, and increases your ability with them.",
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			critical = "1%",
+			damage = "1%",
+			firerate = "1%",
+			ammo = ".5",
+			},
+		},
 })
 
 DarkRPG.createTalent({
@@ -77,6 +95,15 @@ DarkRPG.createTalent({
 	ranks = 9,
 	give = "weapon_tfa_swch_z6_green",
 	desc = "Proficiency in Heavy Weapons allows you to carry one at all times, and increases your ability with them.",
+	weaponcategory = {
+		name = "Heavy Weapons",
+		stats = {
+			critical = "1%",
+			damage = "1%",
+			firerate = "1%",
+			ammo = ".5",
+			},
+		},
 })
 
 DarkRPG.createTalent({
@@ -86,7 +113,11 @@ DarkRPG.createTalent({
 	thumb = "MedicTraining.png",
 	ranks = 9,
 	give = {"weapon_defibrillator", "weapon_bactainjector"}
-	desc = "Medic Training allows you to revive and heal allies.",
+	desc = "Medic Training allows you to revive and heal allies. Each level increases your movement speed and Evasion.",
+	stats = {
+		movement = "2%"
+		evasion = "2%"
+		},
 })
 
 DarkRPG.createTalent({
@@ -96,6 +127,15 @@ DarkRPG.createTalent({
 	ranks = 9,
 	give = "tfa_wsp_3",
 	desc = "Sniper training allows you to carry a sniper at all times, and increases your ability with them.",
+	weaponcategory = {
+		name = "Sniper Rifles",
+		stats = {
+			critical = "3%",
+			damage = "2%",
+			firerate = "1%",
+			ammo = ".5",
+			},
+		},
 })
 
 DarkRPG.createTalent({
@@ -105,14 +145,27 @@ DarkRPG.createTalent({
 	ranks = 9,
 	give = "tfa_swch_clonelauncher",
 	desc = "Engineer training allows you to carry a launcher at all times, and increases your ability with them.",
+	weaponcategory = {
+		name = "Launchers",
+		stats = {
+			critical = "1%",
+			damage = "1%",
+			firerate = "1%",
+			ammo = ".5",
+			},
+		},
 })
 
 DarkRPG.createTalent({
 	name = "Steady Aim",
-	post = {3,2},
+	pos = {3,2},
 	thumb = "SteadyAim.png",
 	ranks = 9,
 	desc = "Steady Aim increases your proficiency with all weapons."
+	stats = {
+		critical = "2%",
+		firerate = "1%",
+		},
 })
 
 DarkRPG.createTalent({
@@ -120,7 +173,11 @@ DarkRPG.createTalent({
 	pos = {3,3},
 	thumb = "PowerShot.png",
 	ranks = 9,
-	desc "Power Shot increases your damage with all weapons."
+	desc = "Power Shot increases your damage with all weapons."
+	stats = {
+		damage = "2%",
+		firerate = "1%",
+		},
 })
 
 DarkRPG.createTalent({
@@ -128,6 +185,10 @@ DarkRPG.createTalent({
 	pos = {4,3},
 	thumb = "Conditioning.png",
 	ranks = 9,
-	desc "Conditioning increases your jump and movement speed."
+	desc = "Conditioning increases your jump and movement speed."
+	stats = {
+		movement = "2%",
+		jump = "2%",
+		},
 })
 
