@@ -1,49 +1,49 @@
 DarkRPG.createWeaponCategory({
 	name = 'Blaster Rifles',
 	weapons = {
-		"weapon_tfa_kotor_br_1",
-		"weapon_tfa_kotor_br_2",
-		"weapon_tfa_kotor_br_3",
-		"weapon_tfa_kotor_br_4",
-		"weapon_tfa_kotor_br_5",
-		"weapon_tfa_kotor_rifle",
+		"tfa_kotor_br_1",
+		"tfa_kotor_br_2",
+		"tfa_kotor_br_3",
+		"tfa_kotor_br_4",
+		"tfa_kotor_br_5",
+		"tfa_kotor_rifle",
 	}
 })
 
 DarkRPG.createWeaponCategory({
 	name = 'Blaster Pistols',
 	weapons = {
-		"weapon_tfa_kotor_bp_2",
-		"weapon_tfa_kotor_bp_3",
-		"weapon_tfa_kotor_bp_4",
-		"weapon_tfa_kotor_bp_5",
-		"weapon_tfa_aurasingpistol",
+		"tfa_kotor_bp_2",
+		"tfa_kotor_bp_3",
+		"tfa_kotor_bp_4",
+		"tfa_kotor_bp_5",
+		"tfa_aurasingpistol",
 	}
 })
 
 DarkRPG.createWeaponCategory({
 	name = 'Heavy Weapons',
 	weapons = {
-		"weapon_tfa_bowcaster",
-		"weapon_tfa_sw_bowcaster",
-		"weapon_chaingun_servius",
-		"weapon_tfa_swch_z6_green",
-		"weapon_tfa_swch_z6_purple",
-		"weapon_tfa_swch_z6_red",
-		"weapon_tfa_swch_z6_white",
-		"weapon_tfa_swch_z6_yellow",
-		"weapon_tfa_kotor_repeaten_2",
-		"weapon_tfa_kotor_repeaten_1",
+		"tfa_bowcaster",
+		"tfa_sw_bowcaster",
+		"chaingun_servius",
+		"tfa_swch_z6_green",
+		"tfa_swch_z6_purple",
+		"tfa_swch_z6_red",
+		"tfa_swch_z6_white",
+		"tfa_swch_z6_yellow",
+		"tfa_kotor_repeaten_2",
+		"tfa_kotor_repeaten_1",
 	}
 })
 
 DarkRPG.createWeaponCategory({
 	name = 'Launchers',
 	weapons = {
-		"weapon_tfa_grenade",
-		"weapon_tfa_swch_clonelauncher_2",
-		"weapon_tfa_swch_clonelauncher_3",
-		"weapon_tfa_swch_clonelauncher",
+		"tfa_grenade",
+		"tfa_swch_clonelauncher_2",
+		"tfa_swch_clonelauncher_3",
+		"tfa_swch_clonelauncher",
 	}
 })
 
