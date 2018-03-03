@@ -24,12 +24,9 @@ DarkRPG.Config.DelayToReset = 20 -- Time between hitting confirms, setting to 0 
 -- IF YOU MAKE NEW TALENT TREE FILES OR WANT TO TURN THEM ON / OFF, USE THIS!
 -- This is referencing files inside the 'darkrpg2/jobs/' folder, do not include the '.lua' here
 DarkRPG.Config.IncludeJobFiles = {
-	"cit-med-gun-mayor",
-	"criminals",
-	"hobo",
-	"police",
-	"sharedtalents",
-	--"template-example",
+	"TrooperTree",
+	"SGTTree",
+	
 }
 
 -- If you do not have 'vrondakis leveling system' or don't want leveling, turn this to true
