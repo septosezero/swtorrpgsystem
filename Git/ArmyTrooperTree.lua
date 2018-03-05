@@ -248,19 +248,19 @@ DarkRPG.createTalent({
 })
 
 DarkRPG.createTalent({
-	name = "Fire Defense",
+	name = "Elemental Defense",
 	team = {TEAM_REPUBLICTRP},
 	pos = {4,3},
-	thumb = "FireDefense.png",
+	thumb = "ElementalDefense.png",
 	ranks = 5,
-	desc = "Fire Defense will increase your ability to withstand damage from fire or burning.",
+	desc = "Elemental Defense will increase your ability to withstand damage from things like fire or shock.",
 	stats = {
 		damage = '-1%',
 		health = '-1%',
 		movement = '1%',
 		reflect = '-1%',
 		explode = '-2%',
-		burn = '5%',
+		burn = '7%',
 	},
 })
 
