@@ -1019,17 +1019,6 @@ DarkRPG.createTalent({
 	},
 })
 
-DarkRPG.createTalent({
-	name = "
-	
-	
-		
-	
-			
-	
-	
-
-	
 	
 	
 		
