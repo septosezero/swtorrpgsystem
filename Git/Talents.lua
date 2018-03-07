@@ -1,3 +1,6 @@
+local GroundForces = {TEAM_REPUBLICTRP, TEAM_REPUBLICARMYSGT, TEAM_REPUBLICARMYOFF, TEAM_REPUBLICARMYGEN, TEAM_IMPARMYTRP, TEAM_IMPARMYSGT, TEAM_IMPARMYOFF, TEAM_IMPARMYGEN}
+local Medics = {TEAM_REPUBLICARMYMED, TEAM_IMPARMYMED}
+
 DarkRPG.createJobSkills({
 	team = {TEAM_REPUBLICTRP, TEAM_SITHTRP},
 	stats = {
@@ -474,6 +477,336 @@ DarkRPG.createJobSkills({
 --   						TALENT TREES (^^CREATE NAVY SKILLS)
 
 DarkRPG.createTalent({
+	name = "Blaster Rifle Proficiency",
+	team = {TEAM_REPUBLICTRP, TEAM_REPUBLICARMYSGT, TEAM_REPUBLICARMYOFF, TEAM_REPUBLICARMYGEN, TEAM_IMPARMYTRP, TEAM_IMPARMYSGT, TEAM_IMPARMYOFF, TEAM_IMPARMYGEN},
+	pos = {1,1},
+	thumb = "BlasterRifles.png",
+	ranks = 5,
+	give = "tfa_kotor_br_2",
+	desc = "Training in Blaster Rifles will allow you to carry one at all times, and will increase your abilities with them.",
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '5',
+			critical = '3',
+			firerate = '2',
+			magazine = '1',
+			ammo = '5',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '-2',
+			critical = '-2',
+			firerate = '-1',
+			magazine = '-1',
+			ammo = '-2',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Blaster Pistol Proficiency",
+	team = GroundForces,
+	pos = {2,1},
+	thumb = "BlasterPistols.png",
+	ranks = 5,
+	give = "tfa_kotor_bp_2",
+	desc = "Training in Blaster Pistols will allow you to carry one at all times, and will increase your abilities with them.",
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '5',
+			critical = '3',
+			firerate = '2',
+			magazine = '1',
+			ammo = '5',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '-2',
+			critical = '-2',
+			firerate = '-1',
+			magazine = '-1',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Combat Reflex Training",
+	team = GroundForces,
+	pos = {3,1},
+	thumb = "ReflexTraining.png",
+	ranks = 5,
+	desc = "Combat Reflex Training will increase you ability to dodge incoming attacks.",
+	stats = {
+		evasion = '2',
+		reflect = '-2',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Reflective Armor",
+	team = GroundForces,
+	pos = {4,1},
+	thumb = "ReflectiveArmor.png",
+	ranks = 5,
+	desc = "Reflective Armor will increase the chances that an attack will reflect off you.",
+	stats = {
+		evasion = '-2',
+		reflect = '2',
+	},
+})
+
+DarkRPG.cretaeTalent({
+	name = "Elemental Defense",
+	team = GroundForces,
+	pos = {1,2},
+	thumb = "ElementalDefense.png",
+	ranks = 5,
+	desc = "Elemental Defense will decrease incoming damage from the elements.",
+	stats = {
+		movement = '-2',
+		burn = '2',
+		endurance = '2',
+		explode = '-2',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Conditioning Training",
+	team = GroundForces,
+	pos = {2,2},
+	thumb = "Conditioning.png",
+	ranks = 5,
+	desc = "Conditioning will increase your movement speed.",
+	stats = {
+		movement = '2',
+		burn = '-2',
+		endurance = '1',
+		jump = '-2',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Defense Training",
+	team = GroundForces,
+	pos = {3,2},
+	thumb = "DefenseTraining.png",
+	ranks = 5,
+	desc = "Defense Training will increase your Defenses.",
+	stats = {
+		movement = '-2',
+		resists = '5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Vertical Jump Training",
+	team = GroundForces,
+	pos = {4,2},
+	thumb = "Vertical.png",
+	ranks = 5,
+	desc = "Vertical Jump Training will increase the distances you can jump.",
+	stats = {
+		movement = '-2',
+		jump = '5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Power Shot",
+	team = GroundForces,
+	pos = {1,3},
+	thumb = "PowerShot.png",
+	ranks = 3,
+	desc = "Power Shot will increase damage inflicted when hitting an enemy.",
+	stats = {
+		damage = '10',
+		critical = '-5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Steady Aim",
+	team = GroundForces,
+	pos = {2,3},
+	thumb = "SteadyAim.png",
+	ranks = 3,
+	desc = "Steady Aim will increase damage inflicted when hitting an enemy critically.",
+	stats = {
+		damage = '-5',
+		critical = '10',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Grenade Training",
+	team = GroundForces,
+	pos = {2,4},
+	thumb = "
+	ranks = 3,
+	desc = "Training with Grenades allows you to carry one on your person, and increases the damage you deal with them.",
+	weapon category = {
+		name = "Explosives",
+		stats = {
+			damage = '15',
+			critical = '3',
+			ammo = '10',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Blaster Rifle Mastery",
+	team = GroundForces,
+	pos = {3,1},
+	thumb = "BlasterRifles2.png",
+	ranks = 3,
+	desc = "Blaster Rifle Mastery increases your ability with Blaster Rifles.",
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '10',
+			critical = '5',
+			magazine = '3',
+			ammo = '5',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '-5',
+			critical = '-2',
+			magazine = '-1',
+			ammo = '-3',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Blaster Pistols Mastery",
+	team = GroundForces,
+	pos = {3,2},
+	thumb = "BlasterPistols2.png",
+	ranks = 3,
+	desc = "Blaster Pistol Mastery increases your ability with Blaster Pistols.",
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '10',
+			critical = '5',
+			firerate = '5',
+			magazine = '3',
+			ammo = '5',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '-5',
+			critical = '-2',
+			firerate = '-2',
+			magazine = '-2',
+			ammo = '-1',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Combat Tactics",
+	team = GroundForces,
+	pos = {3,3},
+	thumb = "CombatTactics.png",
+	ranks = 3,
+	desc = "Combat Tactics will increase your overall combat ability.",
+	stats = {
+		movement = '5',
+		evasion = '5',
+		jump = '10',
+		firerate = '5',
+		ammo = '-2',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Armor Up",
+	team = GroundForces,
+	pos = {3,4},
+	thumb = "ArmorUp.png",
+	ranks = 3,
+	desc = "Armor Up will increase your overall Armor.",
+	stats = {
+		movement = '-5',
+		armor = '25',
+		evasion = '-3',
+		jump = '-5',
+		resists = '10',
+	},
+})
+--						[[Talents For Specializations]]
+
+DarkRPG.createTalent({
+	name = "Medic Training",
+	team = Medics,
+	pos = {1,1},
+	thumb = "MedicTraining.png",
+	ranks = 5,
+	desc = "Medic Training will increase the speed in which you revive allies.",
+	stats = {
+		movement = '5',
+		ammo = '-5',
+	},
+	weaponcategory = {
+		name = "Medical Equipment",
+		stats = {
+			firerate = '7',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Weapon Conversion",
+	team = Medics,
+	pos = {1,2},
+	thumb = "MedicWeapon.png",
+	ranks = 5,
+	desc = "Converting your weapon will allow you to use your pistol to heal allies.",
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '-15',
+			firerate = '5',
+			ammo = '10',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Conditioning Training",
+	team = Medics,
+	pos = {1,3},
+	thumb = "Conditioning.png",
+	ranks = 5,
+	desc = "Conditioning Training will increase your movement speed.",
+	stats = {
+		movement = '5',
+		resists = '-5',
+	},
+})
+
+DarkRPG.createTalent({
 	name = "
 		
+	
+			
+	
+	
+
+	
+	
+	
 		
