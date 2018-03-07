@@ -799,7 +799,230 @@ DarkRPG.createTalent({
 })
 
 DarkRPG.createTalent({
+	name = "Reflex Training",
+	team = Medics,
+	pos = {1,4},
+	thumb = "ReflexTraining.png",
+	ranks = 5,
+	desc = "Reflex Training will decrease the chances of an attack hitting you.",
+	stats = {
+		movement = '-2',
+		evasion = '5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Blaster Rifle Proficiency",
+	team = Medics,
+	pos = {2,1},
+	thumb = "BlasterRifles.png",
+	ranks = 5,
+	give = "tfa_kotor_br_1",
+	desc = "Training in Blaster Rifles will allow you to carry one at all times, and increase your ability with them.",
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '5',
+			critical = '5',
+			firerate = '3',
+			magazine = '2',
+			ammo = '5',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '-2',
+			critical = '-5',
+			firerate = '-2',
+			magazine = '2',
+			ammo = '-3',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Blaster Pistol Proficiency",
+	team = Medics,
+	pos = {2,2},
+	thumb = "BlasterPistols.png",
+	ranks = 5,
+	desc = "Training in Blaster Pistols will increase the damage dealt when using them.",
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '5',
+			critical = '5',
+			firerate = '3',
+			magazine = '2',
+			ammo = '5',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '-5',
+			critical = '-5',
+			firerate = '-2',
+			magazine = '-1',
+			ammo = '-5',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Grenade Training",
+	team = Medics,
+	pos = {2,3},
+	thumb = "Grenade.png",
+	ranks = 5,
+	--give = "tfa_grenade",
+	desc = "Training with Grenades will allow you to carry one on your person, and increase your ability with them.",
+	weaponcategory = {
+		name = "Explosives",
+		stats = {
+			damage = '5',
+			critical = '15',
+			firerate = '5',
+			ammo = '10',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Bacta Grenade Training",
+	team = Medics,
+	pos = {2,4},
+	thumb = "BactaGrenade.png",
+	ranks = 5,
+	--give = "tfa_bacta_grenade",
+	desc = "Training with Bacta Grenades will allow you to caryy one on your person, and increase your ability with Medical Equipment.",
+	weaponcategory = {
+		name = "Medical Equipment",
+		stats = {
+			damage = '-10',
+			firerate = '5',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Blaster Pistol Mastery",
+	team = Medics,
+	pos = {3,4},
+	thumb = "BlasterPistols2.png",
+	ranks = 3,
+	desc = "Blaster Pistol Mastery increases your ability with Blaster Pistols.",
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '10',
+			critical = '5',
+			firerate = '5',
+			magazine = '1',
+			ammo = '5',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '-10',
+			critical = '-10',
+			firerate = '-2',
+			ammo = '-1',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Blaster Rifle Mastery",
+	team = Medics,
+	pos = {3,4},
+	thumb = "BlasterRifles2.png",
+	ranks = 3,
+	desc = "Blaster Rifle Master increases your overall ability with Blaster Rifles.",
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '10',
+			critical = '5',
+			firerate = '5',
+			magazine = '3',
+			ammo = '3',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '-10',
+			critical = '-5',
+			firerate = '-2',
+			magazine = '-2',
+			ammo = '-3',
+		},
+	},
+})
+-- 					Heavy
+DarkRPG.createTalent({
+	name = "Heavy Weapons Training",
+	team = {TEAM_REPUBLICARMYHVY, TEAM_IMPARMYHVY},
+	pos = {1,1},
+	thumb = "HeavyWeapons.png",
+	ranks = 5,
+	--give = "tfa_swch_z6"
+	desc = "Training in Heavy Weapons will allow you to carry one at all times, and will increase your ability with them.",
+	weaponscategory = {
+		name = "Heavy Weapons",
+		stats = {
+			damage = '5',
+			critical = '8',
+			firerate = '2',
+			magazine = '5',
+			ammo = '5',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '-3',
+			critical = '-2',
+			firerate = '-1',
+			magazine = '-1',
+			ammo = '-1',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Heavy Armor",
+	team = {TEAM_REPUBLICARMYHVY, TEAM_IMPARMYHVY},
+	pos = {2,1},
+	thumb = "ArmorUp.png",
+	ranks = 5,
+	desc = "Heavy Armor will increase your overall Armor.",
+	stats = {
+		armor = '20',
+		movement = '-5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Conditioning",
+	team = {TEAM_REPUBLICARMYHVY, TEAM_IMPARMYHVY},
+	pos = {3,1},
+	thumb = "Conditioning.png",
+	ranks = 5,
+	desc = "Conditioning will increase your movement speed.",
+	stats = {
+		armor = '-10',
+		movement = '5',
+	},
+})
+
+DarkRPG.createTalent({
 	name = "
+	
+	
 		
 	
 			
