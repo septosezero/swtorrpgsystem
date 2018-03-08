@@ -489,8 +489,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '5',
 			critical = '3',
-			firerate = '2',
-			magazine = '1',
 			ammo = '5',
 		},
 	},
@@ -499,9 +497,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '-2',
 			critical = '-2',
-			firerate = '-1',
-			magazine = '-1',
-			ammo = '-2',
 		},
 	},
 })
@@ -520,8 +515,6 @@ DarkRPG.createTalent({
 			damage = '5',
 			critical = '3',
 			firerate = '2',
-			magazine = '1',
-			ammo = '5',
 		},
 	},
 	weaponcategory = {
@@ -529,8 +522,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '-2',
 			critical = '-2',
-			firerate = '-1',
-			magazine = '-1',
 		},
 	},
 })
@@ -649,6 +640,7 @@ DarkRPG.createTalent({
 	pos = {2,4},
 	thumb = "
 	ranks = 3,
+	give = "tfa_grenade",
 	desc = "Training with Grenades allows you to carry one on your person, and increases the damage you deal with them.",
 	weapon category = {
 		name = "Explosives",
@@ -672,8 +664,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '10',
 			critical = '5',
-			magazine = '3',
-			ammo = '5',
 		},
 	},
 	weaponcategory = {
@@ -681,8 +671,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '-5',
 			critical = '-2',
-			magazine = '-1',
-			ammo = '-3',
 		},
 	},
 })
@@ -699,9 +687,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '10',
 			critical = '5',
-			firerate = '5',
-			magazine = '3',
-			ammo = '5',
 		},
 	},
 	weaponcategory = {
@@ -709,9 +694,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '-5',
 			critical = '-2',
-			firerate = '-2',
-			magazine = '-2',
-			ammo = '-1',
 		},
 	},
 })
@@ -824,9 +806,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '5',
 			critical = '5',
-			firerate = '3',
-			magazine = '2',
-			ammo = '5',
 		},
 	},
 	weaponcategory = {
@@ -834,9 +813,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '-2',
 			critical = '-5',
-			firerate = '-2',
-			magazine = '2',
-			ammo = '-3',
 		},
 	},
 })
@@ -853,9 +829,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '5',
 			critical = '5',
-			firerate = '3',
-			magazine = '2',
-			ammo = '5',
 		},
 	},
 	weaponcategory = {
@@ -863,9 +836,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '-5',
 			critical = '-5',
-			firerate = '-2',
-			magazine = '-1',
-			ammo = '-5',
 		},
 	},
 })
@@ -876,7 +846,7 @@ DarkRPG.createTalent({
 	pos = {2,3},
 	thumb = "Grenade.png",
 	ranks = 5,
-	--give = "tfa_grenade",
+	give = "tfa_grenade",
 	desc = "Training with Grenades will allow you to carry one on your person, and increase your ability with them.",
 	weaponcategory = {
 		name = "Explosives",
@@ -918,9 +888,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '10',
 			critical = '5',
-			firerate = '5',
-			magazine = '1',
-			ammo = '5',
 		},
 	},
 	weaponcategory = {
@@ -928,8 +895,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '-10',
 			critical = '-10',
-			firerate = '-2',
-			ammo = '-1',
 		},
 	},
 })
@@ -946,9 +911,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '10',
 			critical = '5',
-			firerate = '5',
-			magazine = '3',
-			ammo = '3',
 		},
 	},
 	weaponcategory = {
@@ -956,9 +918,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '-10',
 			critical = '-5',
-			firerate = '-2',
-			magazine = '-2',
-			ammo = '-3',
 		},
 	},
 })
@@ -986,9 +945,6 @@ DarkRPG.createTalent({
 		stats = {
 			damage = '-3',
 			critical = '-2',
-			firerate = '-1',
-			magazine = '-1',
-			ammo = '-1',
 		},
 	},
 })
@@ -1019,6 +975,199 @@ DarkRPG.createTalent({
 	},
 })
 
+DarkRPG.createTalent({
+	name = "Reflective Armor",
+	team = {TEAM_REPUBLICARMYHVY, TEAM_IMPARMYHVY},
+	pos = {4,1},
+	thumb = "ReflectiveArmor.png",
+	ranks = 5,
+	desc = "Reflexive Armor will increase the likelihood that you will deflect an enemy attack.",
+	stats = {
+		evasion = '-5',
+		reflect = '5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Reflex Training",
+	team = {TEAM_REPUBLICARMYHVY, TEAM_IMPARMYHVY},
+	pos = {1,2},
+	thumb = "ReflexTraining.png",
+	ranks = 5,
+	desc = "Reflex training will increase the likelihood that you will dodge an enemy attack.",
+	stats = {
+		evasion = '5',
+		reflect = '-5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Grenade Training",
+	team = {TEAM_REPUBLICARMYHVY, TEAM_IMPARMYHVY},
+	pos = {2,2},
+	thumb = "Grenade.png",
+	ranks = 5,
+	give = "tfa_grenade"
+	desc = "Grenade Training will allow you to carry one on your person at all times, and increase your abilities with them.",
+	weaponcategory = {
+		name = "Explosives",
+		stats = {
+			damage = '5',
+			firerate = '2',
+			ammo = '2',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Blaster Pistols Proficiency",
+	team = {TEAM_REPUBLICARMYHVY, TEAM_IMPARMYHVY},
+	pos = {3,2},
+	thumb = "BlasterPistols.png",
+	ranks = 5,
+	desc = "Blaster Pistols Proficiency will allow you to carry one at all times, and increase your abilities with them.",
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '5',
+			critical = '5',
+		},
+	},
+})
+
+-- 								[[Demo Troop]]
+DarkRPG.createTalent({
+	name = "Blaster Pistols Proficiency",
+	team = {TEAM_REPUBLICARMYDEMO, TEAM_IMPARMYDEMO},
+	pos = {1,1},
+	thumb = "BlasterPistols.png",
+	ranks = 5,
+	give = "tfa_kotor_bp_2",
+	desc = "Training in Blaster Pistols will allow you to carry one at all times, and increase your ability with them.",
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '2',
+			critical = '2',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '-2',
+			critical = '-2',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Blaster Rifles Proficiency",
+	team = {TEAM_REPUBLICARMYDEMO, TEAM_IMPARMYDEMO},
+	pos = {2,1},
+	thumb = "BlasterRifles.png",
+	ranks = 5,
+	give = "tfa_kotor_br_2",
+	desc = "Training in Blaster Rifles will allow you to carry one at all times, and increase your ability with them.",
+	weaponcategory = {
+		name = "Blaster Rifles",
+		stats = {
+			damage = '2',
+			critical = '2',
+		},
+	},
+	weaponcategory = {
+		name = "Blaster Pistols",
+		stats = {
+			damage = '-2',
+			critical = '-2',
+		},
+	},
+})
+			
+DarkRPG.createTalent({
+	name = "Demolitions Training",
+	team = {TEAM_REPUBLICARMYDEMO, TEAM_IMPARMYDEMO},
+	pos = {3,1},
+	thumb = "DemoTraining.png",
+	ranks = 5,
+	give = "tfa_grenade",
+	desc = "Demolitions Training will increase your abilities with demolition type weapons.",
+	weaponcategory = {
+		name = "Explosives",
+		stats = {
+			damage = '7',
+			critical = '5',
+			firerate = '3',
+			ammo = '2',
+		},
+	},
+	weaponcategory = {
+		name = "Launchers",
+		stats = {
+			damage = '5',
+			critical = '7',
+			firerate = '3',
+			ammo = '1',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Conditioning Training",
+	team = {TEAM_REPUBLICARMYDEMO, TEAM_IMPARMYDEMO},
+	pos = {4,1},
+	thumb = "Conditioning.png",
+	ranks = 5,
+	desc = "Conditioning Training will increase your overall movement speed.",
+	stats = {
+		health = '-5',
+		movement = '5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Rapid Reload",
+	team = {TEAM_REPUBLICARMYDEMO, TEAM_IMPARMYDEMO},
+	pos = {2,1},
+	thumb = "Reload.png",
+	ranks = 5,
+	desc = "Rapid Reload will increase the rate in which you can fire.",
+	stats = {
+		firerate = '5',
+		ammo = '-3',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Combat Bandolier",
+	team = {TEAM_REPUBLICARMYDEMO, TEAM_IMPARMYDEMO},
+	pos = {3,1},
+	thumb = "Bandolier.png",
+	ranks = 5,
+	desc = "A Bandolier will increase the amount of ammunition that you have prepared to use at any given time.",
+	stats = {
+		firerate = '-2',
+		magazine = '5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Ammo Box",
+	team = {TEAM_REPUBLICARMYDEMO, TEAM_IMPARMYDEMO},
+	pos = {4,1},
+	thumb = "Ammo.png",
+	ranks = 5,
+	desc = "Carrying an extra ammo box will increase the total amount of ammunition that you can carry.",
+	stats = {
+		movement = '-2',
+		ammo = '5',
+	},
+})
+	
+	
+	
+
+		
 	
 	
 		
