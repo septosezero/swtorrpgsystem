@@ -53,7 +53,7 @@
                             		--[[Server IP: 	74.91.124.2]]--
 	                            	--[[Made by: SeptoseZero   ]]--
 		                        --[[     Heavy Tree        ]]--
-]]--
+--]]
 
 DarkRPG.createJobSkills({
 	team = {TEAM_REPUBLICARMYHVY, TEAM_IMPARMYHVY},
