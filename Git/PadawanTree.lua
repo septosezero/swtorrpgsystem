@@ -55,6 +55,8 @@
 				--[[Made by: SeptoseZero   ]]--
 				--[[     Padawan Tree      ]]--
 --]]
+local Initiate = {TEAM_JEDIPADAWAN, TEAM_SITHACOLYTE}
+
 DarkRPG.createJobSkills({
 	team = {TEAM_JEDIPADAWAN, TEAM_SITHACOLYTE},
 	stats = {
@@ -84,6 +86,99 @@ DarkRPG.createJobSkills({
 		},
 	},
 })
+
+DarkRPG.createTalent({
+	name = "Sprint",
+	team = Initiate, 
+	pos = {1,1},
+	thumb = "SprintTraining.png",
+	ranks = 5,
+	desc = "Sprint will increase the speed in which you move, at cost of some armor.",
+	stats = {
+		movement = '7',
+		armor = '-7',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Armor Reinforcement",
+	team = Initiate,
+	pos = {2,1},
+	thumb = "ArmorUp.png",
+	ranks = 5,
+	desc = "Armor Reinforcement will increase your total armor, at cost of some movement speed.",
+	stats = {
+		movement = '-5',
+		armor = '7',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Lightsaber Combat",
+	team = Initiate,
+	pos = {3,1},
+	thumb = "LightsaberCombat.png",
+	ranks = 5,
+	desc = "Lightsaber Combat will increase your capabilities with Lightsabers at cost of some health.",
+	stats = {
+		health = '-10',
+	},
+	weaponcategory = {
+		name = "Lightsabers",
+		stats = {
+			damage = '10',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Health Up",
+	team = Initiate,
+	pos = {4,1},
+	thumb = "Health.png",
+	ranks = 5,
+	desc = "Health Up will increase your overall health, at cost to some damage.",
+	stats = {
+		health = '10',
+	},
+	weaponcategory = {
+		name = "Lightsabers",
+		stats = {
+			damage = '-10',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Premonition",
+	team = Initiate,
+	pos = {1,2},
+	thumb = "Premonition.png",
+	ranks = 5,
+	desc = "Premonition will increase the likelihood you will see incoming attacks, and be able to dodge them.",
+	stats = {
+		evasion = '5',
+		reflect = '-5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Force Deflect",
+	team = Initiate,
+	pos = {2,2},
+	thumb = "Deflect.png",
+	ranks = 5,
+	desc = "Force Defelct will increase the likelihood you will reflect incoming attacks, back toward your enemy.",
+	stats = {
+		evasion = '-5',
+		reflect = '5',
+	},
+})
+
+DarkRPG.createTalent({
+	name = 
+	
+	
 
 
 
