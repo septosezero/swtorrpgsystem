@@ -1,7 +1,7 @@
 local trooper = {TEAM_REPUBLICTRP, TEAM_SITHARMYTRP}
 
 --[[█████████████████████████████████████████████████████████████████████████████████████████████████
-█░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░██████████░░░░░░█░░░░░░░░░░░░███░░░░░░░░░░█░░░░░░░░░░░░░░█
+--█░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░██████████░░░░░░█░░░░░░░░░░░░███░░░░░░░░░░█░░░░░░░░░░░░░░█
 █░░▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░░░░░░░░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀░░░░█░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█
 █░░▄▀░░░░░░▄▀░░███░░▄▀░░░░░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░██░░▄▀░░█░░▄▀░░░░▄▀▄▀░░█░░░░▄▀░░░░█░░░░░░▄▀░░░░░░█
 █░░▄▀░░██░░▄▀░░███░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░▄▀░░██░░▄▀░░█░░▄▀░░██░░▄▀░░███░░▄▀░░███████░░▄▀░░█████
@@ -52,10 +52,10 @@ local trooper = {TEAM_REPUBLICTRP, TEAM_SITHARMYTRP}
 █████░░▄▀░░█████░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░░░░░░░░░▄▀░░█████░░▄▀░░█████░░▄▀▄▀▄▀▄▀▄▀░░█
 █████░░░░░░█████░░░░░░██░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██████████░░░░░░█████░░░░░░█████░░░░░░░░░░░░░░█
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-				[[Server IP: 	74.91.124.2]]
-				[[Made by: SeptoseZero     ]]
-				[[Trooper Tree             ]]
-]]--
+				--[[Server IP: 	74.91.124.2]]--
+				--[[Made by: SeptoseZero   ]]--
+				--[[     Trooper Tree      ]]--
+
 					--Job Skills: Imperial and Republic Troopers
 DarkRPG.createJobSkills({
 	team = trooper
@@ -264,3 +264,65 @@ DarkRPG.createTalent({
 		},
 	},
 })
+
+DarkRPG.createTalent({
+	name = "Grenade Training",
+	team = trooper,
+	pos = {3,3},
+	ranks = 3,
+	thumb = "Grenade.png",
+	give = "tfa_grenade",
+	desc = "Grenade training will allow you to carry one on your person at all times, as well as increase your abilities with them.",
+	stats = {
+		ammo = '-10',
+	},
+		weaponcategory = {
+		name = "Grenades",
+		stats = {
+			damage = '7',
+			critical = '5',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Bandolier",
+	team = trooper,
+	pos = {3,4},
+	ranks = 3,
+	thumb = "Bandolier.png",
+	stats = {
+		ammo = '10',
+	),
+	weaponcategory = {
+		name = "Grenades",
+		stats = {
+			damage = '-7',
+			critical = '-5',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Armor Up",
+	team = trooper,
+	pos  = {2,4},
+	ranks = 3,
+	thumb = "ArmorUP.png",
+	stats = {
+		health = '-20',
+		armor = '20',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Health Up",
+	team = trooper,
+	pos = {3,4},
+	thumb - "Health.png",
+	stats = {
+		healh = '20',
+		armor = '-20',
+	},
+})
+	
