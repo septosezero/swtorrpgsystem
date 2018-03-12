@@ -31,7 +31,7 @@
 --]]
 
 DarkRPG.createJobSkills({
-	team = {TEAM_REPUBLICARMYDEMO, SITHARMYDEMO},
+	team = {TEAM_REPUBLICARMYDEMO, IMPARMYDEMO},
 	stats = {
 		health = '300',
 		movement = '-10',
