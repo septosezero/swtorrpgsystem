@@ -23,10 +23,10 @@
 ------------------------------------------------------------------
 
 local faction = {}
-faction.Name = "U.S.A"
-faction.DefaultClass = TEAM_CITIZEN
+faction.Name = "Republic Army"
+faction.DefaultClass = TEAM_REPUBLICTRP
 faction.Icon = "sci_char/logo2.png"
-faction.About = [[ USA This is example text]]
+faction.About = [[ The Army consists of the Republic's Ground Forces. ]]
 faction.Models = {
 	["Male"] = {
 		"models/player/ct_gign.mdl",
