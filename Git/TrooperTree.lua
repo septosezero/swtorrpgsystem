@@ -1,4 +1,4 @@
-local trooper = {TEAM_REPUBLICTRP, TEAM_SITHARMYTRP}
+local trooper = {TEAM_REPUBLICTRP, TEAM_IMPARMYTRP, TEAM_REPUBLICARMYSGT, TEAM_IMPARMYSGT, TEAM_REPUBLICARMYOFF, TEAM_IMPARMYOFF, TEAM_REPUBLICARMYGEN, TEAM_IMPARMYGEN}
 
 --[[█████████████████████████████████████████████████████████████████████████████████████████████████
 --█░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░██████████░░░░░░█░░░░░░░░░░░░███░░░░░░░░░░█░░░░░░░░░░░░░░█
