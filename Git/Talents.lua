@@ -1,3 +1,30 @@
+--[[                                                                                                                                       
+     ##### ##                              ##                        # ###                                                             
+  ######  /##                               ##    #                /  /###  /                              #                           
+ /#   /  / ##                               ##   ###     #        /  /  ###/                              ###                          
+/    /  /  ##                               ##    #     ##       /  ##   ##                                #                           
+    /  /   /                                ##          ##      /  ###                                                                 
+   ## ##  /        /###   ###  /###     ### ##  ###   ######## ##   ##            /###   ### /### /###   ###   ###  /###     /###      
+   ## ## /        / ###  / ###/ #### / ######### ### ########  ##   ##   ###     / ###  / ##/ ###/ /##  / ###   ###/ #### / /  ###  /  
+   ## ##/        /   ###/   ##   ###/ ##   ####   ##    ##     ##   ##  /###  / /   ###/   ##  ###/ ###/   ##    ##   ###/ /    ###/   
+   ## ## ###    ##    ##    ##    ##  ##    ##    ##    ##     ##   ## /  ###/ ##    ##    ##   ##   ##    ##    ##    ## ##     ##    
+   ## ##   ###  ##    ##    ##    ##  ##    ##    ##    ##     ##   ##/    ##  ##    ##    ##   ##   ##    ##    ##    ## ##     ##    
+   #  ##     ## ##    ##    ##    ##  ##    ##    ##    ##      ##  ##     #   ##    ##    ##   ##   ##    ##    ##    ## ##     ##    
+      /      ## ##    ##    ##    ##  ##    ##    ##    ##       ## #      /   ##    ##    ##   ##   ##    ##    ##    ## ##     ##    
+  /##/     ###  ##    /#    ##    ##  ##    /#    ##    ##        ###     /    ##    /#    ##   ##   ##    ##    ##    ## ##     ##    
+ /  ########     ####/ ##   ###   ###  ####/      ### / ##         ######/      ####/ ##   ###  ###  ###   ### / ###   ### ########    
+/     ####        ###   ##   ###   ###  ###        ##/   ##          ###         ###   ##   ###  ###  ###   ##/   ###   ###  ### ###   
+#                                                                                                                                 ###  
+ ##                                                                                                                         ####   ### 
+                                                                                                                          /######  /#  
+                                                                                                                         /     ###/    
+					--[[Created By : Septose Zero]]--
+					--[[Server IP : 74.91.124.2  ]]--
+					--[[   Talent Master File    ]]--
+
+
+
+
 local Shared = {TEAM_REPUBLICTRP, TEAM_REPUBLICARMYSGT, TEAM_REPUBLICARMYOFF, TEAM_REPUBLICARMYGEN, TEAM_REPUBLICARMYMED, TEAM_REPUBLICARMYDEMO, TEAM_REPUBLICARMYHVY, TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYTRP, TEAM_IMPARMYSGT, TEAM_IMPARMYOFF, TEAM_IMPARMYGEN, TEAM_IMPARMYHVY, TEAM_IMPARMYMED, TEAM_IMPARMYDEMO, TEAM_IMPARMYSNIP, NavyForces}
 local GroundForces = {TEAM_REPUBLICTRP, TEAM_REPUBLICARMYSGT, TEAM_REPUBLICARMYOFF, TEAM_REPUBLICARMYGEN, TEAM_IMPARMYTRP, TEAM_IMPARMYSGT, TEAM_IMPARMYOFF, TEAM_IMPARMYGEN}
 local Medics = {TEAM_REPUBLICARMYMED, TEAM_IMPARMYMED}
