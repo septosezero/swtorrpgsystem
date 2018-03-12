@@ -54,13 +54,8 @@
 				--[[Server IP: 	74.91.124.2]]--
 				--[[Made by: SeptoseZero   ]]--
 				--[[      Medic Tree       ]]--
-
-
-
-
-
-
---]]
+--[[ The following file is meant to be the talents file for the Medic troopers in the SWTOR RP Server.]]--
+--[[ If you have any questions about this work or any other Bandit Gaming work, email septosezero@banditgaming.site.nfoservers.com]]--
 
 
 DarkRPG.createJobSkills({
