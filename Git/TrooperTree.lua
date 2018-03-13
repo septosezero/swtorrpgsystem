@@ -1,6 +1,4 @@
-local trooper = {TEAM_REPUBLICTRP, TEAM_IMPARMYTRP, TEAM_REPUBLICARMYSGT, TEAM_IMPARMYSGT, TEAM_REPUBLICARMYOFF, TEAM_IMPARMYOFF, TEAM_REPUBLICARMYGEN, TEAM_IMPARMYGEN}
-local Shared = {TEAM_REPUBLICTRP, TEAM_REPUBLICARMYSGT, TEAM_REPUBLICARMYOFF, TEAM_REPUBLICARMYGEN, TEAM_REPUBLICARMYMED, TEAM_REPUBLICARMYDEMO, TEAM_REPUBLICARMYHVY, TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYTRP, TEAM_IMPARMYSGT, TEAM_IMPARMYOFF, TEAM_IMPARMYGEN, TEAM_IMPARMYHVY, TEAM_IMPARMYMED, TEAM_IMPARMYDEMO, TEAM_IMPARMYSNIP, NavyForces}
-
+local trooper = {TEAM_REPUBLICARMYTRP, TEAM_IMPARMYTRP}
 --[[█████████████████████████████████████████████████████████████████████████████████████████████████
 --█░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░██████████░░░░░░█░░░░░░░░░░░░███░░░░░░░░░░█░░░░░░░░░░░░░░█
 █░░▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░░░░░░░░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀░░░░█░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█
@@ -144,7 +142,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Rapid Reload",
-	team = shared, 
+	team = trooper, 
 	pos = {3,1},
 	thumb = "RapidReload.png",
 	ranks = 5,
@@ -157,7 +155,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Power Shot",
-	team = shared,
+	team = trooper,
 	pos = {4,1},
 	thumb = "PowerShot.png",
 	ranks = 5,
@@ -170,7 +168,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Combat Reflexes",
-	team = shared,
+	team = trooper,
 	pos = {1,2},
 	ranks = 5,
 	thumb = "ReflexTraining.png",
@@ -183,7 +181,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Refective Armor",
-	team = shared,
+	team = trooper,
 	pos = {2,2},
 	ranks = 5,
 	thumb = "ReflectiveArmor.png",
@@ -196,7 +194,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Conditioning",
-	team = shared,
+	team = trooper,
 	pos = {3,2},
 	ranks = 5,
 	thumb = "Conditioning.png",
@@ -209,7 +207,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Defensive Armor",
-	team = shared,
+	team = trooper,
 	pos = {4,2},
 	ranks = 5,
 	thumb = "DefenseTraining.png",
@@ -268,7 +266,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Grenade Training",
-	team = shared,
+	team = trooper,
 	pos = {3,3},
 	ranks = 3,
 	thumb = "Grenade.png",
@@ -288,7 +286,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Bandolier",
-	team = shared,
+	team = trooper,
 	pos = {3,4},
 	ranks = 3,
 	thumb = "Bandolier.png",
@@ -306,7 +304,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Armor Up",
-	team = shared,
+	team = trooper,
 	pos  = {2,4},
 	ranks = 3,
 	thumb = "ArmorUP.png",
@@ -318,7 +316,7 @@ DarkRPG.createTalent({
 
 DarkRPG.createTalent({
 	name = "Health Up",
-	team = shared,
+	team = trooper,
 	pos = {3,4},
 	thumb - "Health.png",
 	stats = {
