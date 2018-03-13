@@ -162,6 +162,84 @@ DarkRPG.createTalent({
 })
 
 DarkRPG.createTalent({
+	name = "Rapid Reload",
+	team = {TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYSNIP}, 
+	pos = {3,1},
+	thumb = "RapidReload.png",
+	ranks = 5,
+	desc = "Rapid Reload will increase your firerate and descrease your reload times.",
+	stats = {
+		firerate = '3',
+		damage = '-2',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Power Shot",
+	team = {TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYSNIP},
+	pos = {4,1},
+	thumb = "PowerShot.png",
+	ranks = 5,
+	desc = "Power Shot will increase the damaage dealt upon successfully hitting an enemy.",
+	stats = {
+		firerate = '-2',
+		damage = '3',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Combat Reflexes",
+	team = {TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYSNIP},
+	pos = {1,2},
+	ranks = 5,
+	thumb = "ReflexTraining.png",
+	desc = "Combat Reflexes will increase the chances you can successfully evade an incoming attack.",
+	stats = {
+		evasion = '3',
+		reflect = '-3',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Refective Armor",
+	team = {TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYSNIP},
+	pos = {2,2},
+	ranks = 5,
+	thumb = "ReflectiveArmor.png",
+	desc = "Reflective Armor will increase the chances you can successfully reflect an incoming attack.",
+	stats = {
+		evasion = '-3',
+		reflect = '3',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Conditioning",
+	team = Shared,
+	pos = {3,2},
+	ranks = 5,
+	thumb = "Conditioning.png",
+	desc = "Conditioning will increase the speed at which you can move.",
+	stats = {
+		movement = '3',
+		resists = '-3',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Defensive Armor",
+	team = {TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYSNIP},
+	pos = {4,2},
+	ranks = 5,
+	thumb = "DefenseTraining.png",
+	desc = "Defensive Armor will increase you ability to resist incoming damage sources.",
+	stats = {
+		movement = '-3',
+		resists = '3',
+	},
+})
+
+DarkRPG.createTalent({
 	name = "Blaster Pistol Mastery",
 	team = {TEAM_REPUBLICARMYDEMO, TEAM_IMPARMYDEMO},
 	pos = {1,3},
@@ -206,4 +284,73 @@ DarkRPG.createTalent({
 		},
 	},
 })
+
+DarkRPG.createTalent({
+	name = "Grenade Training",
+	team = {TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYSNIP},
+	pos = {3,3},
+	ranks = 5,
+	thumb = "Grenade.png",
+	give = "tfa_grenade",
+	desc = "Grenade Training will give you the ability to carry grenades and use them in combat.",
+	stats = {
+		ammo = '-5',
+	},
+	weaponcategory = {
+		name = "Grenades",
+		stats = {
+			damage = '3',
+			critical = '3',
+			ammo = '2',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Bandolier",
+	team = {TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYSNIP},
+	pos = {3,4},
+	ranks = 5,
+	thumb = "Bandolier.png",
+	desc = "Carrying a Bandolier in combat will increase your overall ammo capacity.",
+	stats = {
+		movement = '-5',
+		ammo = '20',
+	},
+	weaponcategory = {
+		name = "Grenades",
+		stats = {
+			damge = '-2',
+			critical = '-1',
+			ammo = '-1',
+		},
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Armor Up",
+	team = {TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYSNIP},
+	pos = {4,1},
+	ranks = 5,
+	thumb = "ArmorUp.png",
+	desc = "Armor Up increases the total amount of Armor you have available.",
+	stats = {
+		health = '-10',
+		armor = 20,
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Health Up",
+	team = {TEAM_REPUBLICARMYSNIP, TEAM_IMPARMYSNIP},
+	pos = {4,3},
+	ranks = 5,
+	thumb = "Health.png",
+	desc = "Health Up increases the total amount of Health you have available.",
+	stats = {
+		health = '20',
+		armor = '-10',
+	},
+})
+
 
