@@ -88,66 +88,33 @@ DarkRPG.createJobSkills({
 })
 
 DarkRPG.createTalent({
-	name = "Sprint",
-	team = Initiate, 
+	name = "Single Lightsaber Proficiency",
+	team = {TEAM_JEDIPADAWAN},
 	pos = {1,1},
-	thumb = "SprintTraining.png",
+	thumb = "SingleSaber.png",
 	ranks = 5,
-	desc = "Sprint will increase the speed in which you move, at cost of some armor.",
+	give = "weapon_lightsaber_padawans",
+	desc = "Training in combat with a Single Saber will increase your proficiency with them.",
 	stats = {
-		movement = '7',
-		armor = '-7',
+		damage = '5',
+		firerate = '2',
 	},
 })
 
-DarkRPG.createTalent({
-	name = "Armor Reinforcement",
-	team = Initiate,
+DarkRPG.createTalent([
+	name = "Dual Lightsaber Proficiency",
+	team = {TEAM_JEDIPADAWAN},
 	pos = {2,1},
-	thumb = "ArmorUp.png",
+	thumb = "DualSaber.png",
 	ranks = 5,
-	desc = "Armor Reinforcement will increase your total armor, at cost of some movement speed.",
+	give = "weapon_lightsaber_padawandual",
+	desc = "Training in combat with Dual Sabers will increase your proficiency with them.",
 	stats = {
-		movement = '-5',
-		armor = '7',
+		damage = '5',
+		firerate = '2',
 	},
 })
-
-DarkRPG.createTalent({
-	name = "Lightsaber Combat",
-	team = Initiate,
-	pos = {3,1},
-	thumb = "LightsaberCombat.png",
-	ranks = 5,
-	desc = "Lightsaber Combat will increase your capabilities with Lightsabers at cost of some health.",
-	stats = {
-		health = '-10',
-	},
-	weaponcategory = {
-		name = "Lightsabers",
-		stats = {
-			damage = '10',
-		},
-	},
-})
-
-DarkRPG.createTalent({
-	name = "Health Up",
-	team = Initiate,
-	pos = {4,1},
-	thumb = "Health.png",
-	ranks = 5,
-	desc = "Health Up will increase your overall health, at cost to some damage.",
-	stats = {
-		health = '10',
-	},
-	weaponcategory = {
-		name = "Lightsabers",
-		stats = {
-			damage = '-10',
-		},
-	},
-})
+	
 
 --[[
 █████████████████████████████████████████████████████████████
@@ -189,8 +156,4 @@ DarkRPG.createTalent({
 		movement =  '10',
 	},
 })
-
-DarkRPG.createTalent({
-	name = "B
-	
 
