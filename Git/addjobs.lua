@@ -29,3 +29,17 @@
 -- Add these to the current jobs file, replacing the current setup for the force user jobs.
 
 TEAM_SITHAPP = DarkRP.createJob("Sith Apprentice", {
+    color = Color(240, 7, 7, 255),
+    model = {"models/player/sith/human.mdl", "models/player/sith/bith.mdl", "models/player/sith/gotal.mdl", "models/player/sith/gungan.mdl", "models/player/sith/nautolan.mdl", "models/player/sith/pantoran.mdl", "models/player/sith/quarren.mdl", "models/player/sith/rodian.mdl", "models/player/sith/togruta.mdl", "models/player/sith/trandoshan.mdl", "models/player/sith/twilek.mdl", "models/player/sith/twilek2.mdl", "models/player/sith/umbaran.mdl", "models/player/sith/zabrak.mdl"},
+    description = [[An apprentice to a Sith Lord.]],
+    weapons = {"keys", "climb_swep2"},
+    command = "SITHAPPRENTICE",
+    max = 10,
+    salary = 500,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    candemote = false,
+    category = "Sith Order",
+ })
+
