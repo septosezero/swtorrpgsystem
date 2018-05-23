@@ -101,7 +101,7 @@ DarkRPG.createTalent({
 	},
 })
 
-DarkRPG.createTalent([
+DarkRPG.createTalent({
 	name = "Dual Lightsaber Proficiency",
 	team = {TEAM_JEDIPADAWAN},
 	pos = {2,1},
@@ -114,6 +114,37 @@ DarkRPG.createTalent([
 		firerate = '2',
 	},
 })
+
+DarkRPG.createTalent({
+	name = "Saberstaff Proficiency",
+	team = {TEAM_JEDIPADAWAN),
+	pos = {3,1},
+	thumb = "Saberstaff.png",
+	ranks = 5,
+	give = "weapon_lightsaber_padawanstaff",
+	desc = "Training in combat with a saber staff will increase your proficiency.",
+	stats = {
+		damage = '5',
+		firerate = '2',
+	},
+})
+
+DarkRPG.createTalent({
+	name = "Lightsaber Combat",
+	team = {TEAM_JEDIPADAWAN),
+	pos = {4,1},
+	thumb = "LightsaberCombat.png",
+	ranks = 5,
+	desc = "Training in Lightsaber Combat will increase damage dealt with Sabers.",
+	weaponcategory = {
+		name = "Lightsabers",
+		stats = {
+			damage = '2',
+			firerate = '1',
+		},
+	},
+})
+		
 	
 
 --[[
